@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="dashboard.html" class="brand">
+			<img src="logo.png" alt="" id="im" width="170px" margi>
+			<!-- <span class="text">Homers Heaven</span> -->
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="dashboard.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="home.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">HomePage</span>
+				</a>
+			</li>
+			<li>
+				<a href="payment.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Payment</span>
+				</a>
+			</li>
+			<li>
+				<a href="maintance.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Maintanance Request</span>
+				</a>
+			</li>
+			<li>
+				<a href="profile.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Edit Profile</span>
+				</a>
+			</li>
+			<li>
+				<a href="invoice.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Rent Payment Invoice</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="login.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="dashboard.html" class="nav-link">Dashboard</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="profile.html" class="profile">
+				<img src="/img/Screenshot_93.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+        <div class = "invoice-wrapper" id = "print-area">
+            <div class = "invoice">
+                <div class = "invoice-container">
+                    <div class = "invoice-head">
+                        <div class = "invoice-head-top">
+                            <div class = "invoice-head-top-left text-start">
+                                <img src = "logo.png">
+                            </div>
+                            <div class = "invoice-head-top-right text-end">
+                                <h3>ভাড়ার রশিদ</h3>
+                            </div>
+                        </div>
+                        <div class = "hr"></div>
+                        <div class = "invoice-head-middle">
+                            <div class = "invoice-head-middle-left text-start">
+                                <p><span class = "text-bold">Date</span>: 05/6/2024</p>
+                            </div>
+                            <div class = "invoice-head-middle-right text-end">
+                                <p><spanf class = "text-bold">Invoice No:</span>16789</p>
+                            </div>
+                        </div>
+                        <div class = "hr"></div>
+                        <div class = "invoice-head-bottom">
+                            <div class = "invoice-head-bottom-left">
+                                <ul class="ul">
+                                    <li class = 'text-bold'>Invoiced To:</li>
+                                    <li>মোঃ রায়হানুল ইসলাম রাহাত</li>
+                                    <li>ফ্লাট নাম্বার ২৪</li>
+                                    <li>আহসান ভিলা</li>
+                                    <li> মিরপুর ১ ঢাকা</li>
+                                </ul>
+                            </div>
+                            <div class = "invoice-head-bottom-right">
+                                <ul class = "text-end" class="ul">
+                                    <li class = 'text-bold'>Pay To:</li>
+                                    <li>মোঃ মইনুল হাসান মন্ডল</li>
+                                    <li>মালিক:এ এন এন এন্টারপ্রাইজ</li>
+                                    <li> মিরপুর ১ ঢাকা</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "overflow-view">
+                        <div class = "invoice-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td class = "text-bold">Service</td>
+                                        <td class = "text-bold">Description</td>
+                                        <td class = "text-bold">Rate</td>
+                                        <td class = "text-bold">QTY</td>
+                                        <td class = "text-bold">Amount</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ফ্ল্যাট ভাড়া:</td>
+                                        <td>mounth:April</td>
+                                        <td>12500</td>
+                                        <td>1</td>
+                                        <td class = "text-end">12500 taka </td>
+                                    </tr>
+                                    <tr>
+                                        <td>বিদ্যুৎ বিল</td>
+                                        <td>mounth:April</td>
+                                        <td>1000</td>
+                                        <td>1</td>
+                                        <td class = "text-end">1000 taka</td>
+                                    </tr>
+                                    <tr>
+                                        <td>গ্যাস বিল</td>
+                                        <td>Mounth:April,May</td>
+                                        <td>1250</td>
+                                        <td>2</td>
+                                        <td class = "text-end">2500 Taka</td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <td colspan="4">10</td>
+                                        <td>$500.00</td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                            <div class = "invoice-body-bottom">
+                                <div class = "invoice-body-info-item border-bottom">
+                                    <div class = "info-item-td text-end text-bold">Sub Total:</div>
+                                    <div class = "info-item-td text-end">16000 Taka</div>
+                                </div>
+                                <div class = "invoice-body-info-item border-bottom">
+                                    <div class = "info-item-td text-end text-bold">Tax:</div>
+                                    <div class = "info-item-td text-end">0</div>
+                                </div>
+                                <div class = "invoice-body-info-item">
+                                    <div class = "info-item-td text-end text-bold">Total:</div>
+                                    <div class = "info-item-td text-end">16000 Taka</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "invoice-foot text-center">
+                        <p><span class = "text-bold text-center">NOTE:&nbsp;</span>This is computer generated receipt and does not require physical signature.</p>
+                        <p><span class = "text-bold text-center">NOTE:&nbsp;</span>মাসের ১০ তারিখের মধ্যে ভাড়া পরিশোধ করবেন</p>
+
+                        <div class = "invoice-btns">
+                            <button type = "button" class = "invoice-btn" onclick="printInvoice()">
+                                <span>
+                                    <i class="fa-solid fa-print"></i>
+                                </span>
+                                <span>Print</span>
+                            </button>
+                            <button type = "button" class = "invoice-btn">
+                                <span>
+                                    <i class="fa-solid fa-download"></i>
+                                </span>
+                                <span>Download</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src = "script.js"></script>
+    </body>
+</html>

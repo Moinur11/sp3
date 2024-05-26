@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo"><img src="logo.jpg" alt="Logo" width="50px"></div>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="search.html">Service</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"> <i class="bx bx-search"></i></button>
+        </form>
+    </header>
+    <div class="box">
+        <form>
+            <h2>Sign up</h2>
+            <div class="inputBox">
+                <input type="text" required="required">
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required" id="password">
+                <span id="pass">Password</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required" id="confirm_password">
+                <span id="cp">Confirm Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="login.html">Already have an account? Sign in</a>
+            </div>
+            <input type="submit" value="Sign up" id="bt">
+        </form>
+    </div>
+</body>
+</html>

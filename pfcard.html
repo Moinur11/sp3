@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Cards</title>
+    <!-- <link rel="stylesheet" type="text/css" href="pfc.css">
+    <link rel="stylesheet" href="pf.css"> -->
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #ecf0f3;
+        }
+        .back-btn{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            color: #0b1669;
+            background: #45a1e7;
+            box-shadow: -3px -3px 7px #ffffff,
+                        3px 3px 5px #ceced1;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            margin-top: 50px;
+			/* border: #600f5d; */
+			
+        }
+        .card-container {
+            width: 350px;
+            border-radius: 10px;
+            background: #ecf0f3;
+            box-shadow: -3px -3px 7px #000000,
+                        3px 3px 5px #ceced1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+			margin-left: 60px;
+        }
+        .upper-container, .lower-container {
+            width: 100%;
+            text-align: center;
+        }
+        .upper-container .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .upper-container .image-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .lower-container h3 {
+            margin: 10px 0;
+            font-size: 20px;
+            color: #31344b;
+        }
+        .lower-container h4, .lower-container p {
+            color: #44476a;
+        }
+        .lower-container .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background: #31344b;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .lower-container input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="back-btn" onclick="goBack()">Back</div>
+
+    <div class="container">
+        <div class="card-container">
+            <div class="upper-container">
+                <div class="image-container">
+                    <img src="/img/Screenshot_2.png" alt="Profile Image">
+                </div>
+            </div>
+            <div class="lower-container">
+                <div>
+                    <h3>Rita Fariha Richi</h3>
+                    <h4></h4>
+                </div>
+                <div>
+                    <h3>As a Tenant</h3>
+                    <p><div id="x" style="color: rgba(226, 8, 51, 0.797); border: 1.5px solid black; font-weight: 700;" >Lets Connect With Your House <br>Owner</div></p>
+                    <a href="dashboard.html" class="btn">View Dashboard</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="upper-container">
+                <div class="image-container">
+                    <img src="img/Screenshot_2.png" alt="Profile Image">
+                </div>
+            </div>
+            <div class="lower-container">
+                <div>
+                    <h3>Rita Fariha Richi</h3>
+                    <h4></h4>
+                </div>
+                <div>
+                    <p style="color: black; font-weight: bold;">As a House Owner</p>
+                    <p style="border: 3px dotted black; color: red;">Enter Your Owner ID</p>
+                    <input type="text" placeholder="Enter Your Owner ID ">
+                    <a href="#"><p class="small-text" style="color: black;">Not a Verified Owner? Please Verify Yourself.</p></a>
+                    <a href="dashboard.html" class="btn">View Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
